@@ -1,0 +1,29 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.fontkeliye{
+    font-family: 'Space Mono', monospace;
+}
+
+.font-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+@keyframes scale-in-out {
+  0%, 100% {
+    transform: scale(1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(8, 112, 184, 0.7);
+  }
+}
+
+.animate-scale-in-out {
+  animation: scale-in-out 1.5s infinite;
+}
