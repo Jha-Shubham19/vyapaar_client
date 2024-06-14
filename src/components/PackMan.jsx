@@ -4,18 +4,18 @@ import { PlayersContext } from '../context/PlayersContext';
 export const PackMan = ({ currentPosition, playerNumber, index }) => {
 
   const { allPlayersData } = useContext(PlayersContext);
-  const UserPieceIcon = `/images/body${playerNumber}.svg`;
+  const UserPieceIcon = `images/body${playerNumber}.svg`;
 
   
 
   const userEyesPosition =
     Number(currentPosition) < 11
-      ? "/images/eyesLeft.svg"
+      ? "images/eyesLeft.svg"
       : currentPosition < 21
-        ? "/images/eyesUp.svg"
+        ? "images/eyesUp.svg"
         : currentPosition < 31
-          ? "/images/eyesRight.svg"
-          : "/images/eyesDown.svg";
+          ? "images/eyesRight.svg"
+          : "images/eyesDown.svg";
 
   const overlappingTranslations = ['translateX(0)', 'translateX(-50%)', 'translateX(-100%)', 'translateX(-150%)'];
   const overlappingTranslationsY = ['translateY(0)', 'translateY(-50%)', 'translateY(-100%)', 'translateY(-150%)'];

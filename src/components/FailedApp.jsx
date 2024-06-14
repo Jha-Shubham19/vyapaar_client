@@ -89,7 +89,7 @@ function FailedApp() {
   }, [toSellActivate])
   
   return (
-    <div className="h-screen flex max-lg:flex-col md:justify-evenly md:p-1 gap-4 bg-cover bg-center bg-no-repeat cursor-retro" style={{backgroundImage:`url(/images/main-bg.svg)`,backgroundSize: 'cover',
+    <div className="h-screen flex max-lg:flex-col md:justify-evenly md:p-1 gap-4 bg-cover bg-center bg-no-repeat cursor-retro" style={{backgroundImage:`url(images/main-bg.svg)`,backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'repeat',}}>
       <Gamecard setters={{setToBuildActivate, setToSellActivate}}/>
